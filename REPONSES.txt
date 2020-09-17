@@ -36,3 +36,8 @@ EXERCICE 2
 6. Il y a 2 modifications dans le fichier. Sur gitk on voit que le master n'est pas à jour et qu'il
 faut faire un merge sur le fichier.
 7. On voit les 2 modifications sur les fichiers reponses séparées par des =. Il faut merge le fichier.
+
+EXERCICE 3
+2. On remarque que les tests passent. On remarque cette fois ci que le test ne passe pas 
+(rouge). assertTrue dit si son paramètre est vrai ou faux.
+
