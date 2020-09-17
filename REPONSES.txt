@@ -25,5 +25,14 @@ EXERCICE 3 :
 donc dans le getter et le setter dans cet exemple.
 
 TP2
+EXERCICE 1
 2. Tous les fichiers dans target/ donc le fichier jar par exemple.
-DACCCCCCCCCCCCCCCCCC
+5. On remarque la modification de la ligne dans la classe.
+8. Voici le hash du commit : ff6ed9dd9a02fcf112a8dbd57d3e396d5d470453
+
+EXERCICE 2
+3. Ils sont synchronisé car les deux commits sont reliés par un trait sur gitk
+5. Erreur nous avons oublié de pull avant, afin de récupérer ce qu'il y a dans le serveur web
+6. Il y a 2 modifications dans le fichier. Sur gitk on voit que le master n'est pas à jour et qu'il
+faut faire un merge sur le fichier.
+7. On voit les 2 modifications sur les fichiers reponses séparées par des =. Il faut merge le fichier.
