@@ -26,3 +26,4 @@ donc dans le getter et le setter dans cet exemple.
 
 TP2
 2. Tous les fichiers dans target/ donc le fichier jar par exemple.
+OKKKKKKKKKKKKKKK
