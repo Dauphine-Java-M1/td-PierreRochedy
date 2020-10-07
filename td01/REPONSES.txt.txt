@@ -1,0 +1,14 @@
+Exercice 1:
+
+1. Cela fonctionne car il y a un constructeur par défaut.
+2. On ne peut pas accéder aux champs car ils sont privés. 
+On peut y remedier en créant des getters et setters ou en passant les attributs en public.
+3. Ils sont nécéssaire pour protéger la modification de l'objet par d'autres.
+4. Cela permet d'accéder aux attributs d'une classe. Donc on doit le faire ici.
+5. Lorqu'on instancie l'objet, on doit utiliser le nouveau constructeur car le constructeur par 
+défaut n'existe plus. Donc il faut indiquer en paramètre le point X et Y.
+6. On doit aussi modifier dans le constructeur le px et py tel que "this.x = x;" et 
+"this.y = y;"
+7. On incrémente un attribut statique qui compte le nombre d'instance de la classe
+8. Il le sait en fonction du nombre de paramètre lors de l'instanciation.
+ 
