@@ -1,0 +1,43 @@
+Pierre ROCHEDY
+
+TP1
+EXERCICE 1 :
+4. Version 3.6.3
+5. GroupID : Nom du package qui est unique dans le projet
+   ArtifactID : Nom du projet
+6. src/ contient un repertoire main/ et un repertoire test/
+8. Class Path définit le chemin d'accès au répertoire où se trouvent les 
+classes et les packages Java afin qu'elle les exécute
+13. Cela permet de compiler le projet dans une autre version (1.8) que la version 
+actuelle de Maven. On lui donne la valeur 1.8.
+
+
+EXERCICE 2 :
+1. On a l'erreur "Error: Unable to access jarfile target/td00-1.0-SNAPSHOT.jar"
+Il y a surement un problème d'accès au fichier.
+
+EXERCICE 3 :
+3. sysout + Ctrl Espace est un raccourcit pour la commande System.out.println(); qui affiche des messages en Java
+4. Ce raccourcit permet de créer une méthode toString()
+5. Ce raccourcit permet de créer une methode main pour lancer le programme.
+6. Cela permet de créer les getters et les setters de la classe pour ce champs.
+7. Ce raccourcit permet de renommer la classe proprement partout dans le projet. Même chose pour le champs toto, cela modifiera 
+donc dans le getter et le setter dans cet exemple.
+
+TP2
+EXERCICE 1
+2. Tous les fichiers dans target/ donc le fichier jar par exemple.
+5. On remarque la modification de la ligne dans la classe.
+8. Voici le hash du commit : ff6ed9dd9a02fcf112a8dbd57d3e396d5d470453
+
+EXERCICE 2
+3. Ils sont synchronisé car les deux commits sont reliés par un trait sur gitk
+5. Erreur nous avons oublié de pull avant, afin de récupérer ce qu'il y a dans le serveur web
+6. Il y a 2 modifications dans le fichier. Sur gitk on voit que le master n'est pas à jour et qu'il
+faut faire un merge sur le fichier.
+7. On voit les 2 modifications sur les fichiers reponses séparées par des =. Il faut merge le fichier.
+
+EXERCICE 3
+2. On remarque que les tests passent. On remarque cette fois ci que le test ne passe pas 
+(rouge). assertTrue dit si son paramètre est vrai ou faux.
+
