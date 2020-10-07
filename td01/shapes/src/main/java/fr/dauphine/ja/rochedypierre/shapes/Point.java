@@ -4,13 +4,15 @@ import java.util.ArrayList;
 
 public class Point {
 
+	
 	private int x;
 	private int y;
 	private static int cpt = 0;
-	
+
 	public int getX() {
 		return x;
 	}
+	
 	public void setX(int x) {
 		this.x = x;
 	}
@@ -21,7 +23,6 @@ public class Point {
 		this.y = y;
 	}
 
-	
 	public Point(int x, int y) {
 		super();
 		this.x = x;
@@ -36,11 +37,28 @@ public class Point {
 		cpt++;
 	}
 	
+	@Override
+	public boolean equals(Object o2) {
+		if (!(o2 instanceof Point)) {
+			return false;
+		}
+		Point p = (Point) o2;
+		return x==p.x && y==p.y;
+	}
 	
 	@Override
 	public String toString() {
 		return "Point [x=" + x + ", y=" + y + "]";
 	}
+	
+	public boolean isSameAs(Point p) {
+		
+		if(p.getX() == this.getX() && p.getY() ==this.getY()) {
+			return true;
+		}
+		return false;
+	}
+	
 	
 	public static void main(String[] args) {
 
