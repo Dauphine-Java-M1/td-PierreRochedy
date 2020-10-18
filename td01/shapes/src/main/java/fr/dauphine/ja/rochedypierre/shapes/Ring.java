@@ -2,6 +2,7 @@ package fr.dauphine.ja.rochedypierre.shapes;
 
 public class Ring extends Circle{
 	
+	//Hérite de Circle
 	private int rayon_interne;
 
 	public Ring(Point centre, int rayon, int rayon_interne) {
