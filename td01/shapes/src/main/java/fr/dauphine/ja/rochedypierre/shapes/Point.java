@@ -59,7 +59,11 @@ public class Point {
 		return false;
 	}
 	
-	
+	public void translate(int dx, int dy) {
+		x=dx;
+		y=dy;
+	}
+
 	public static void main(String[] args) {
 
 		Point p=new Point(1,2);

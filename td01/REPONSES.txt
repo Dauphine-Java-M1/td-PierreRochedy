@@ -20,4 +20,30 @@ on a instancié les 2 objets donc ils n'ont pas les mêmes adresses mémoire.
 3. On devrait avoir la valeur 0 pour P3. C'est la méthode Equals qui est appelée. Pour résoudre
 le problème on créer la méthode Equals dans Point.
 
+
 Exercice 3: 
+2. Sans ajouter du code, la méthode ajoute le point sans prendre en compte la capacité 
+maximale du tableau. On aura donc par exemple un tableau de 3 points avec une capacité maximale
+de 2. Pour éviter ceci, on ajoute une condition dans notre méthode add qui teste si notre tableau 
+est déjà rempli.
+5. Si null est passé en paramètre de la fonction contains, cela renvoie false. On peut aussi faire
+un add(null), cela va ajouter un Point "null" dans notre ligne brisée. En revanche, on a un erreur 
+java.lang.NullPointerException pour la méthode contains. 
+6. Cela change juste pour nbPoints où l'on a adapter la méthode "length" en "size" pour une
+LinkedList
+
+
+Exercice 4:
+1. On peut aussi prendre juste un paramètre et mutliplier ce paramètre par les 2 points x et y.
+2. Le problème est que les deux cercles ont été translaté. Pour éviter ce problème, chaque cercle
+doit avoir son centre donc il faut créer deux Points.
+6. Ici on bouge le centre du point et non le cercle.
+9. Il faut rendre la méthode static car on n'apppelle pas cette méthode sur un cercle en particulier
+mais sur plusieurs donc pas de "c.contains" mais plutôt "contains(p,c1)"
+
+
+Exercice 5:
+1. Oui c'est intéressant ici pour ne pas dupliquer les attributs du cercle et garder ses méthodes
+car un anneau est un sous type de cercle.
+4. Cela appelle la méthode toString de notre classe Circle car c'est le seul toString de notre
+héritage. Pour résoudre ceci on override une nouvelle méthode toString dans la classe Ring.
