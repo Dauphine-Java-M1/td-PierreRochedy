@@ -1,0 +1,74 @@
+TD02
+
+COMPILATEUR -> Regarde type declaré (Gauche instanciation)
+EXECUTION -> Regarde type réelle (Droite instanciation)
+
+Exercice 1:
+
+1. Le main affiche "42 42 24 24 24 24". 
+Les 4 premiers nombres vont afficher la variable meth de leur classe respective (42 pour Mère et
+24 pour Fille). Pour les deux derniers nombres, la variable meth va être celle de la fille car 
+lors de l'instanciation, le type réel est la fille (Mere mereFille = new Fille();) donc la valeur
+variable meth (42) va être ecrasée par la classe fille (24). Même chose lorsqu'on appelle la méthode
+printMeth();
+
+2. Dans la classe Fille, on peut accéder aux méthodes meth() de la fille
+et de la mère en utilisant le mot clé "super". Dans le main on ne peux accèder 
+qu'à une méthode meth() en fonction de l'instanciation.
+
+3. Le main affiche : 
+42 : pareil que 1.
+42 : pareil que 1.
+24 : pareil que 1.
+42 : On va dans la méthode printMeth() de la classe mère. Celle-ci va appeler 
+la méthode meth() de la classe mère et non de la classe fille car vu que les 
+méthodes sont static, c'est la méthode de la classe actuel qui est appelée
+par défaut, le type réel de l'instanciation n'est plus pris en compte.
+42 : Les méthodes meth() sont statiques alors cela ne va plus regarder le type
+réel mais le type declaré donc cela appelle meth() de la classe Mere
+42 : On va appeller la méthode printMeth de la classe Mere puis appelé la méthode
+meth() de celle-ci aussi. 
+
+4. Le main affiche :
+42 : On affiche le champs meth de la classe mère
+42 : On va dans la méthode printMeth() de la classe mère et on affiche sa variable
+24 : On affiche le champs meth de la classe fille
+42 : On va dans la méthode printMeth() de la classe mère et on affiche sa variable
+42 : Le champ est référencé par le type declaré donc cela affiche la variable meth
+de la classe mère.
+42 : On va dans la méthode printMeth() de la classe mère et on affiche sa variable
+
+Exercice 2.
+
+1. FILLE
+Erreur sur "private void e()"
+-> Une méthode dans une classe fille ne peut pas être moins accessible que une
+même methode dans la classe mère lors de la rédéfinition.
+Erreur sur "char h()"
+-> Une méthode dans une classe fille ne peux pas changer le type de retour que 
+celui dans la même méthode dans la classe mère.
+Erreur sur "void k() throws Exception"
+-> Une méthode dans une classe fille ne peux pas changer le type d'exception que 
+celui dans la même méthode dans la classe mère.
+
+MAIN
+Erreur sur "mere.miage();"
+-> Erreur de compilation, le compilateur regarde le type declaré qui est mère, 
+or il n'y a pas de methode miage dans cette classe.
+
+3. Redéfinition : La méthode est exactement pareil que celle dans la classe
+mère (Paramètres / Exceptions / Type de Retour / Nom)
+   Surcharge : Le nombre de paramètre peut changer dans la méthode de la classe fille
+
+MERE :  c(Mere mere) : Surcharge
+FILLE : a() : Redéfinition
+        b() : Redéfinition
+	c(Mere mere) : Redéfinition
+	c(Fille b) : Surcharge
+	d() : Redéfinition
+	d(Mere mere) : Surcharge
+	f() : Redéfinition
+	g() : Surcharge
+	j() : Redéfinition
+        l() : Redéfinition
+	m() : Redéfinition
